@@ -7,9 +7,9 @@
   <title>Pete BOT-edge-edge</title>
   <link rel="stylesheet" href="https://use.typekit.net/yzj0ntp.css">
   <meta name="description" content="Text Pete Bot-edge-edge">
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-  <meta property="og:image" content="pete.gif" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+  <meta property="og:image" content="img/pete.gif" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
   <style type="text/css">
   	body, html {
   		font-family: aktiv-grotesk, sans-serif;
@@ -33,35 +33,37 @@
       width: 100%;
     }
   	#text {
-  		top: 10vh;
+      padding:15px;
   		position:relative;
+      box-sizing: border-box;
   	}
+    #text img {
+      max-width:100%;
+    }
     #image img {
-      top: 10vh;
       position:relative;
     }
   	h1 {
       margin-top:0px;
   		font-family: industry, sans-serif;
-  		font-size: 4em;
+  		font-size: 3.5em;
   	}
   	h2 {
-      font-size: 2em;
+      font-size: 1.5em;
   	}
     @media (min-width: 600px) {
-      #text {
-        top: 25vh;
-        position:relative;
-      }
       html, body {
         margin: 0;
         padding: 0;
         height: 100%;
         overflow: hidden;
       }
+      #text {
+        top: 5vh;
+      }
       #image {
-        background: #004D80;background: rgb(0,77,128);
-        background: linear-gradient(45deg, rgba(0,77,128,1) 0%, rgba(127,166,191,1) 95%);
+        background: rgb(29,37,60);
+        background: linear-gradient(45deg, rgba(29,37,60,1) 0%, rgba(0,77,128,1) 95%);
       }
       #image img {
         top: 25vh;
@@ -92,11 +94,13 @@
 
 <body>
   <div id="text">
-    <h2>Text "Let's go" to Pete BOT-edge-edge</h2>
+    <img src="img/pete.svg">
+    <h2>Text "Let's go" to<br>Pete BOT-edge-edge*</h2>
     <h1>(574) 406-2050</h1>
+    <p>*We won't send you scary spam or anything. And the real Mayor Pete will not text you back.</p>
   </div>
   <div id="image">
-    <img src="pete.gif">
+    <img src="img/pete.gif">
   </div>
 </body>
 </html>
